@@ -17,7 +17,7 @@
 <div class="card">
     <div class="grid">
         <div><strong>Tanggal</strong><p>{{ $penjualan->tanggal->format('d/m/Y') }}</p></div>
-        <div><strong>Status</strong><p>{{ $penjualan->status }}</p></div>
+        <div><strong>Status</strong><p><span class="badge badge-{{ strtolower($penjualan->status) }}">{{ $penjualan->status }}</span></p></div>
         <div><strong>Pelanggan</strong><p>{{ $penjualan->nama_pelanggan }}</p></div>
         <div><strong>Produk</strong><p>{{ $penjualan->nama_produk }}</p></div>
         <div><strong>Jumlah</strong><p>{{ $penjualan->jumlah }}</p></div>
